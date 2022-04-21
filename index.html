@@ -1,42 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Display Webcam Stream</title>
- 
-<style>
-#container {
-	margin: 0px auto;
-	width: 500px;
-	height: 375px;
-	border: 10px #333 solid;
-}
-#videoElement {
-	width: 500px;
-	height: 375px;
-	background-color: #666;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
- 
 <body>
-<div id="container">
-	<video autoplay="true" id="videoElement" controls>
-	
-	</video>
-</div>
-<script>
-var video = document.querySelector("#videoElement");
+    <h1
+    style="
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    "
+    >
+        National University Mathematics 1st year CGPA Calculator
+    </h1>
+    <div id="form-container">
+        <div id="input-area">
+            <label for="one">History of the Emergence of Independent Bangladesh</label>
+            <input type="text" id="one">
+            <label for="two">Physics-1</label>
+            <input type="text" id="two">
+            <label for="three">Physics-2</label>
+            <input type="text" id="three">
+            <label for="four">Introduction to Statistics or Chemistry-1</label>
+            <input type="text" id="four">
+            <label for="five">chemistry-1 Practical or Statistic-1 practicle</label>
+            <input type="text" id="five">
+            <label for="six">Fundamental of Mathematics</label>
+            <input type="text" id="six">
+            <label for="seven">Calculus-1</label>
+            <input type="text" id="seven">
+            <label for="eight">Linear Algebra</label>
+            <input type="text" id="eight">
+            <label for="nine">Analytic And Vector Geometric</label>
+            <input type="text" id="nine">
 
-if (navigator.mediaDevices.getUserMedia) {
-  navigator.mediaDevices.getUserMedia({ video: true, audio: true })
-    .then(function (stream) {
-      video.srcObject = stream;
-    })
-    .catch(function (err0r) {
-      console.log("Something went wrong!");
-    });
-}
-</script>
+        </div>
+        <button type="button" onclick="getInputValue();">Get Total Point</button>
+
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
