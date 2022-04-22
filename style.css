@@ -4,31 +4,59 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: rgb(136, 179, 245);
+    background-color: rgb(231, 255, 253);
 }
 #form-container{
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 100vw;
+    max-width: 700px;
     
 }
 #form-container>#input-area{
     display: flex;
     flex-direction: column;
-    
     width: 70%;
     
 }
 #form-container>button{
     height: 50px;
-    margin-top: 50%;
+    width: 30%;
     margin-left: 20px;
-    transform: translateY(-50%);
-    background-color: aqua;
+    background-color: rgb(104, 240, 250);
+    box-shadow: 1px 1px 10px rgb(224, 217, 175);
 }
 
-#form-container>#input-area>input{
+select{background-color: rgb(205, 253, 253);
     margin-bottom: 10px;
     height: 30px;
     border: 2px solid green;
+}
+
+#display{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0%;
+    left: 0%;
+    background-color: rgb(217, 205, 230);
+    width: 0%;
+    height: 100%;
+}
+#result{
+    font-size: 25px;
+    visibility: hidden;
+    padding: 20px;
+}
+#try{
+    background-color: antiquewhite;
+    padding: 10px 20px;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}#try:hover{
+    background-color: aqua;
 }
