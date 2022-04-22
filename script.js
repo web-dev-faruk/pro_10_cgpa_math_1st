@@ -23,6 +23,7 @@ function result(){
     const result=(one_f+two_f+three_f+four_f+five_f+six_f+seven_f+eight_f+nine_f)/28;
     const final_result= parseFloat(result).toFixed(2);
     
+    
     if(final_result==='NaN'){
         document.getElementById("result").innerHTML=`কোথাও ভুল করেছেন। আবার চেষ্টা করুন।`;
         document.getElementById("result").style.visibility="visible";
